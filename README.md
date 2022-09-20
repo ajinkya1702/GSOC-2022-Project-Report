@@ -1,4 +1,4 @@
-![GSOC logo](assets/google Summer OF CODE.png)
+<img src="assets/GSOC.png" align="center">
 
 <h1 align="center"> Google Summer of Code 2022 </h1>
 

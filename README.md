@@ -1,8 +1,7 @@
 
 
 <h1 align="center"> Google Summer of Code 2022 </h1>
-<p align="center"><i>with</i> </p>
-<h2 align="center"><a href="https://summerofcode.withgoogle.com/organizations/4724093699489792/">Cuneiform Digital Library Initiative (CDLI)</a></h2>
+
 
 ![GSoC with CDLI](assets/banner.png)
 

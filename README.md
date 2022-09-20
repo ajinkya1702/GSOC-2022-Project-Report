@@ -2,18 +2,15 @@
 
 <h1 align="center"> Google Summer of Code 2022 </h1>
 
-
-
-
-<h2 align="center"><i>Project Report on "<a href="https://summerofcode.withgoogle.com/projects/#5200278048997376">Discovery Search And Advanced Search Features</a>" </i> </h2>
+<h2 align="center"><i>Project Report on "<a href="https://summerofcode.withgoogle.com/programs/2022/projects/Vvp3XmeB">Search Enhancements</a>" </i> </h2>
 
 ## About the project
 
-The project mainly focuses on enhancing the Search and Advanced search features in the CDLI framework and adding new features to it using [Elasticsearch](https://www.elastic.co/elasticsearch/) and [CakePHP](https://cakephp.org/).
+The project mainly focuses on enhancing the Search and improving the code structure for the same in the CDLI framework and adding new features to it using [Elasticsearch](https://www.elastic.co/elasticsearch/) and [CakePHP](https://cakephp.org/).
 
-<i>Proposal</i> : [Discovery search and advanced search features](https://docs.google.com/document/d/1WEeNnALSUN4yecCbYxuDyMNUMOzkGcev6Dss4XuNydc/edit#)\
-<i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=yashrajdesai30)\
-<i>Weekly Blogs</i> : [Blog](https://cdli-gh.github.io/blog/gsoc21/discoverSearchAndAdvancedSearchFeatures/index)
+<i>Proposal</i> : [Search Enhancements](https://docs.google.com/document/d/1N5AqM5AbE7UVa9rax5_KRReH1v9c8lGzWKyVhd26xMc/edit?usp=sharing)\
+<i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=ajinkyamorankar03)\
+<i>Weekly Blogs</i> : [Blog](https://cdli-gh.github.io/blog/gsoc22/SearchEnhancements/index)
 
 Mentor : [Vedant Wakalkar](https://www.linkedin.com/in/karna98/)
 

@@ -12,7 +12,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 <i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=ajinkyamorankar03)\
 <i>Weekly Blogs</i> : [Blog](https://cdli-gh.github.io/blog/gsoc22/SearchEnhancements/index)
 
-Mentor : [Vedant Wakalkar](https://www.linkedin.com/in/karna98/)
+Mentor : [Yashraj Desai](https://www.linkedin.com/in/yashraj-desai-55a78a1a5/)
 
 ### Objectives and Deliverables
 

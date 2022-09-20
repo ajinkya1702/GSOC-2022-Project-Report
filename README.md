@@ -1,9 +1,9 @@
-
+![GSoC](assets/banner.png)
 
 <h1 align="center"> Google Summer of Code 2022 </h1>
 
 
-![GSoC with CDLI](assets/banner.png)
+
 
 <h2 align="center"><i>Project Report on "<a href="https://summerofcode.withgoogle.com/projects/#5200278048997376">Discovery Search And Advanced Search Features</a>" </i> </h2>
 

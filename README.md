@@ -1,7 +1,5 @@
 <img src="assets/GSOC.png" align="center">
 
-<h1 align="center"> Google Summer of Code 2022 </h1>
-
 <h2 align="center">Project Report on "<a href="https://summerofcode.withgoogle.com/programs/2022/projects/Vvp3XmeB">Search Enhancements</a>" </h2>
 
 ## About the project

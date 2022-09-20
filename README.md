@@ -1,4 +1,4 @@
-![GSoC](assets/banner-gsoc2016_2.png)
+![GSOC logo](assets/banner.png)
 
 <h1 align="center"> Google Summer of Code 2022 </h1>
 

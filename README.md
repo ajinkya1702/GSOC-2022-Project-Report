@@ -16,62 +16,60 @@ Mentor : [Yashraj Desai](https://www.linkedin.com/in/yashraj-desai-55a78a1a5/)
 
 | \# | Objectives                    | Associated Deliverables         | issue(s) | Pull Requests |    Status |
 | --- | ----------------------------- | -------------------------------------------- | -------- | -------- | ---- |
-| 1 |  Add “Ids” and “Keywords” search fields to both simple and advanced search | Users will be able to search for specific keywords, Id/Numbers artifacts | [#314](https://gitlab.com/cdli/framework/-/issues/314) | [!317](https://gitlab.com/cdli/framework/-/merge_requests/317), [!307](https://gitlab.com/cdli/framework/-/merge_requests/307) |:heavy_check_mark:|
-| 2 | Implementation of fuzzy queries | Fuzzy queries would yield search results in all search fields|[#593](https://gitlab.com/cdli/framework/-/issues/593) | [!317](https://gitlab.com/cdli/framework/-/merge_requests/317) |:heavy_check_mark: |
-| 3 | Port request to Elasticsearch from cURL to HttpClient | Replaced cURL implementation with HTTP Client|[#350](https://gitlab.com/cdli/framework/-/issues/350)| [!338](https://gitlab.com/cdli/framework/-/merge_requests/338) | :heavy_check_mark: |
-| 4 | Highlight transliteration sign values in ATF display |The sign values will be highlighted in the full and compact search results page|[#347](https://gitlab.com/cdli/framework/-/issues/347)| [!354](https://gitlab.com/cdli/framework/-/merge_requests/354) | :heavy_check_mark: |
-| 5 | Enable search inscription with sign value permutation |When a user will enable this search feature and search for sign values, all possible sign values with matching sign names of the query will be returned| [#596](https://gitlab.com/cdli/framework/-/issues/596) | [!375](https://gitlab.com/cdli/framework/-/merge_requests/375) |:heavy_check_mark: |
-| 6 | Search settings integration | Users will be able to save specific configuration of search settings and search results will be displayed accordingly. |[#540](https://gitlab.com/cdli/framework/-/issues/540) | [!332](https://gitlab.com/cdli/framework/-/merge_requests/332) | :heavy_check_mark: |
-| 7 | Input flexibility enhancements |Users will have the flexibility to search with both UTF-8 and ASCII characters |[#597](https://gitlab.com/cdli/framework/-/issues/597)|[!375](https://gitlab.com/cdli/framework/-/merge_requests/375) |:heavy_check_mark: |
-| 8 | Filter search results by RTI Image, Transliterations , 3D Data | Users can apply filters such as RTI Image, Transliterations, 3D Data and get search results | [#136](https://gitlab.com/cdli/framework/-/issues/136) | [!369](https://gitlab.com/cdli/framework/-/merge_requests/369) |:heavy_check_mark: |
+| 1 |  Show number of hits in the parenthesis | Users will be able see number of hits in the parenthesis before applying a filter | [#526](https://gitlab.com/cdli/framework/-/issues/526) | [!663](https://gitlab.com/cdli/framework/-/merge_requests/663) |:heavy_check_mark:|
+| 2 | Search Filter Problem | Filter categories are updated after applying of filters |[#531](https://gitlab.com/cdli/framework/-/issues/531) | [!663](https://gitlab.com/cdli/framework/-/merge_requests/663) |:heavy_check_mark: |
+| 3 | Search breaks when searching for a certain string | Users would be able to use more symbols and signs while searching|[#1067](https://gitlab.com/cdli/framework/-/issues/1067)| [!676](https://gitlab.com/cdli/framework/-/merge_requests/676) | :heavy_check_mark: |
+| 4 | search children entities |While searching for a parent, user would be also given child results of the parent searched|[#1035](https://gitlab.com/cdli/framework/-/issues/1035)| [!696](https://gitlab.com/cdli/framework/-/merge_requests/696) | :heavy_check_mark: |
+| 5 | Encode Elasticsearch queries using JSON |Re-writing the ElasticSearch queries in an array structure| [#1129](https://gitlab.com/cdli/framework/-/issues/1129) | [!705](https://gitlab.com/cdli/framework/-/merge_requests/705) |:heavy_check_mark: |
+| 6 | Extend Free Search | Adding more fields to the search |[#996](https://gitlab.com/cdli/framework/-/issues/996),[#1233](https://gitlab.com/cdli/framework/-/issues/1233) | [!706](https://gitlab.com/cdli/framework/-/merge_requests/706) | :heavy_check_mark: |
 
 ## Preview of objectives
 
-### 1. Keywords search
+### 1. Show number of hits in the parenthesis
   - *Final outcome:*\
-      Keywords search field can internally query all the fields of the database and return results accordingly.
+      Users will be able see number of hits in the parenthesis before applying a filter
   - *Methodology:*
-      * Used Elasticsearch query DSL format in backend.
+      * Used Elasticsearch buckets aggregations to count number of hits in every search.
 <center>
 
-| Keyword's search |
+| Show number of hits|
 | :---:	|
 | <img src="assets/gifs/keywords.gif" width="800" height="450"> |
-| Search results for "Vorderasiatisches Museum" in Keyword's field. |
+| Search results for "1156" in Keyword's field. |
 
 </center>
 
-### 2. Fuzzy Id's search
+### 2. Search Filter Problem 
  - *Final outcome:*\
-    Id's Search should yield results even if input query is not in exact format.
+    All filter categories are updated after applying an individual filter or more
  - *Methodology:*
-     * Processed the input query by applying regex operations before performing search.  
+     * Used ElasticSearch Buckets to verify the existence of a filter category.  
 <center>
 
-| Fuzzy Id's search |
+| Search Filter Problem |
 | :---:	|
 | <img src="assets/gifs/fuzzy-ids.gif" width="800" height="450"> |
-| Search yields results even for improper input format "A1169" for Museum Id "OIM A01169" in Id's search |
+| Applying 'clay' filter category after searching for "1156" in Free Search|
 
 </center>
 
-### 3. Highlight inscriptions
+### 3. Search breaks when searching for a certain string
 
 - *Final outcome:*\
-   Highlight the inscription input in search results.
+   Users would be able to search using more symbols and signs
 - *Methodology:*
-    * The text in the inscription field of each search result was processed using regex so that it can highlight the input query. 
+    * Using '//' before any reserved character in the searched keyword 
 
 <center>
 
-| Highlight inscriptions |
+| Search breaks when searching for a certain string |
 | :---:	|
 | <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
-| Highlights the inscription input "muk" in search results |
+| Search results for "HS 1475(+)" in Free search|
 
 </center>
 
-### 4. Sign Value permutation
+### 4. search children entities
 
 - *Final outcome:*\
    Search results of all possible sign-readings of input sign-values are returned.
@@ -143,6 +141,7 @@ Mentor : [Yashraj Desai](https://www.linkedin.com/in/yashraj-desai-55a78a1a5/)
 
 * Robust Testing of all newly added features.
 * Documentation (User's and Developer's)
+* Fixing any bugs that arise from all the implemented features.
 
 ## Acknowledgements
 

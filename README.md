@@ -32,8 +32,8 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 | Show number of hits|
 | :---:	|
-| <img src="assets/gifs/keywords.gif" width="800" height="450"> |
-| Search results for "1156" in Keyword's field. |
+| <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
+| Filter Category "Language" results for "1156" in Keyword's field. |
 
 </center>
 
@@ -41,15 +41,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
  - *Final outcome:*\
     All filter categories are updated after applying an individual filter or more.
  - *Methodology:*
-     * Used ElasticSearch Buckets to verify the existence of a filter category.  
-<center>
-
-| Search Filter Problem |
-| :---:	|
-| <img src="assets/gifs/fuzzy-ids.gif" width="800" height="450"> |
-| Applying 'clay' filter category after searching for "1156" in Free Search|
-
-</center>
+     * Used ElasticSearch Buckets to verify the existence of a filter category. 
 
 ### 3. Search breaks when searching for a certain string
 
@@ -95,10 +87,12 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 <center>
 
-| Search Settings |
+|  |
 | :---:	|
-| <img src="assets/gifs/search-settings.gif" width="800" height="450"> |
-| Removed "Museum collections" and "Period" from search results by modifing Search Settings.  |
+| Old string format	|
+| <img src="assets/Queryinstring.png"> |
+| New Array format	|
+| <img src="assets/JSONarray.png"> |
 
 </center>
 

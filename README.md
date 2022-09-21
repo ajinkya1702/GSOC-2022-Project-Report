@@ -32,7 +32,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 | Show number of hits|
 | :---:	|
-| <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
+| <img src="assets/numberofhits_AdobeExpress.gif"> |
 | Filter Category "Language" results for "1156" in Keyword's field. |
 
 </center>
@@ -54,7 +54,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 | Search breaks when searching for a certain string |
 | :---:	|
-| <img src="assets/gifs/highlight-inscriptions.gif" width="800" height="450"> |
+| <img src="assets/HS1475_Trim_AdobeExpress.gif" > |
 | Search results for "HS 1475(+)" in Free search|
 
 </center>

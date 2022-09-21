@@ -25,7 +25,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 ### 1. Show number of hits in the parenthesis
   - *Final outcome:*\
-      Users will be able see number of hits in the parenthesis before applying a filter
+      Users will be able see number of hits in the parenthesis before applying a filter.
   - *Methodology:*
       * Used Elasticsearch buckets aggregations to count number of hits in every search.
 <center>
@@ -39,7 +39,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 ### 2. Search Filter Problem 
  - *Final outcome:*\
-    All filter categories are updated after applying an individual filter or more
+    All filter categories are updated after applying an individual filter or more.
  - *Methodology:*
      * Used ElasticSearch Buckets to verify the existence of a filter category.  
 <center>
@@ -54,9 +54,9 @@ The project mainly focuses on enhancing the Search and improving the code struct
 ### 3. Search breaks when searching for a certain string
 
 - *Final outcome:*\
-   Users would be able to search using more symbols and signs
+   Users would be able to search using more symbols and signs.
 - *Methodology:*
-    * Using '//' before any reserved character in the searched keyword 
+    * Using '//' before any reserved character in the searched keyword. 
 
 <center>
 
@@ -70,27 +70,27 @@ The project mainly focuses on enhancing the Search and improving the code struct
 ### 4. search children entities
 
 - *Final outcome:*\
-   Search results of all possible sign-readings of input sign-values are returned.
+   * Filter categories are updated to show parent-child relationship using "->" symbol. 
+   * Results for children entities would also be include when the user searches for a parent.
 - *Methodology:*
-   * Sign names field was added and populated in database.
-   * Containerised jtf-lib library in docker to make requests and get response in the framework.
-   * Input query was converted to sign-names using jtf-lib and these sign-names along with sign-values are used to perform the search. 
+   * using tables from database to create the required mappings.
+   * Then use those mappings to get required results.
 
 <center>
 
-| Sign Value permutation |
+| search children entities |
 | :---:	|
 | <img src="assets/gifs/sign-permutation.gif" width="800" height="450"> |
-| All possible sign-readings of input "muk" can be searched with sign-name "MUG". |
+| Searching for "stone" to show parent-child relationship |
 
 </center>
 
-### 5. Search Settings
+### 5. Encode Elasticsearch queries using JSON
 
 - *Final outcome:*\
-   Search settings can be saved in session and search results will be displayed accordingly. 
+   ElasticSearch queries are more readable and appendable 
 - *Methodology:*
-   * Used cakePHP sessions to store the search settings and applied it on the search results.
+   * Using PHP `json_encode()` to encode the  query which is in array format and then pass to a GET request for expected results from ElasticSearch.
 
 
 <center>
@@ -102,38 +102,22 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 </center>
 
-### 6. Input flexibility enhancements
+### 6. Extend Free Search
 
 - *Final outcome:*\
-   Users can search with both UTF-8 and ASCII characters
+   More fields to search and hence more results and data for the users.
 - *Methodology:*
-   * Used UTF8 to ASCII mapping for converting the input into ASCII before performing search.
+   * Adding fields using logstash pipeline and then adding them to respective fields
 
 <center>
 
-| Input flexibility enhancements |
+| Extend Free Search |
 | :---:	|
 | <img src="assets/gifs/input-flexibility.gif" width="800" height="450"> |
-| UTF-8 input "diš2" yields search results for ASCII format "disz2" |
+| Search for 'shiny' in free search which is a keyword of a newly added field |
 
 </center>
 
-### 7. Images and Transliteration Filter
-
-- *Final outcome:*\
-   Search results can be filtered w.r.t to Images and Transliteration according to the access of the user.
-- *Methodology:*
-   * Created new index for "Images" table.
-   * Added elasticsearch queries which would filter results according to the access.
-
-<center>
-
-| Images and Transliteration Filter |
-| :---:	|
-| <img src="assets/gifs/images-filter.gif" width="800" height="450"> |
-| Search results filtered having image type as "photo". |
-
-</center>
 
 ## To Do (Post GSoC)
 
@@ -143,4 +127,4 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 ## Acknowledgements
 
-Participating in GSoC was a great learning curve for me, I faced alot of challenges in this journey which helped me in learning new skills. I would like to thank my mentors [Vedant Wakalkar](https://www.linkedin.com/in/karna98/) and [Émilie](https://www.linkedin.com/in/epageperron/) for guiding me and helping me throughout my GSoC journey. I shall always be indebted to such a welcoming organisation to help me enhance my coding skills.
+Participating in GSoC was a great learning curve for me, I faced alot of challenges in this journey which helped me in learning new skills. I would like to thank my mentors [Yashraj Desai](https://www.linkedin.com/in/yashraj-desai-55a78a1a5/) and [Émilie](https://www.linkedin.com/in/epageperron/) for guiding me and helping me throughout my GSoC journey. I shall always be indebted to such a welcoming organisation to help me enhance my coding skills.

@@ -72,7 +72,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 | search children entities |
 | :---:	|
-| <img src="assets/gifs/sign-permutation.gif" width="800" height="450"> |
+| <img src="assets/Stone.gif" width="800" height="450"> |
 | Searching for "stone" to show parent-child relationship |
 
 </center>
@@ -107,7 +107,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 | Extend Free Search |
 | :---:	|
-| <img src="assets/gifs/input-flexibility.gif" width="800" height="450"> |
+| <img src="assets/shiny.gif" > |
 | Search for 'shiny' in free search which is a keyword of a newly added field |
 
 </center>

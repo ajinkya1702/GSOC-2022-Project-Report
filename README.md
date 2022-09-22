@@ -101,17 +101,7 @@ The project mainly focuses on enhancing the Search and improving the code struct
 - *Final outcome:*\
    More fields to search and hence more results and data for the users.
 - *Methodology:*
-   * Adding fields using logstash pipeline and then adding them to respective fields
-
-<center>
-
-| Extend Free Search |
-| :---:	|
-| <img src="assets/shiny.gif" > |
-| Search for 'shiny' in free search which is a keyword of a newly added field |
-
-</center>
-
+   * Adding fields using logstash pipeline and then adding them to respective fields.
 
 ## To Do (Post GSoC)
 

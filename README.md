@@ -106,8 +106,12 @@ The project mainly focuses on enhancing the Search and improving the code struct
 ## To Do (Post GSoC)
 
 * Robust Testing of all newly added features.
-* Documentation (User's and Developer's)
 * Fixing any bugs that arise from all the implemented features.
+
+## Pending Work 
+
+* Adding  `Languages` Table to Search Children entities features
+* Documentation (User's and Developer's)
 
 ## Acknowledgements
 

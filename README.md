@@ -116,10 +116,12 @@ The project mainly focuses on enhancing the Search and improving the code struct
 
 ## Eliminated Tasks
 
-*Filtering using ElastichSearch Buckets
- Could not be implemented as there is no way to return the documents in a single bucket
-* Show Statistics 
-  More Priority task were taken up.
+* Filtering using ElastichSearch Buckets
+  
+  Reason - Could not be implemented as there is no way to return the documents in a single bucket
+* Show Statistics
+ 
+  Reason-More Priority task were taken up.
 ## Acknowledgements
 
 Google Summer Of Code 2022 was a challenging and constructive experience. I have learned new technologies and in addition I have understood  the fundamentals of working on a real time Software Project. I would like to thank my mentor [Yashraj Desai](https://www.linkedin.com/in/yashraj-desai-55a78a1a5/) for his guidance. I have learned a lot from him and his methodolgy in guiding me. I also appreciate the help from [Lar Willighaegan](https://www.linkedin.com/in/lars-willighagen/) and [Émilie](https://www.linkedin.com/in/epageperron/) for  helping me throughout my GSoC journey. I will always be grateful to [CDLI](https://cdli.ucla.edu/) for being such a hospitable organization.

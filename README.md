@@ -4,7 +4,12 @@
 
 ## About the project
 
-The project mainly focuses on enhancing the Search and improving the code structure for the same in the CDLI framework and adding new features to it using [Elasticsearch](https://www.elastic.co/elasticsearch/) and [CakePHP](https://cakephp.org/).
+This project mainly focuses on updating and improving the current search features. The search setup has been completed under past programs of GSOC and hence the documentation of it is needed which would also be covered under the scope of this project. I will be using Elasticsearch and PHP to add various features which would make the search more user-friendly.
+
+## Technology
+
+*  [ElasticSearch](https://www.elastic.co/elasticsearch/)
+*  [Cake PHP](https://cakephp.org/)
 
 <i>Proposal</i> : [Search Enhancements](https://docs.google.com/document/d/1N5AqM5AbE7UVa9rax5_KRReH1v9c8lGzWKyVhd26xMc/edit?usp=sharing)\
 <i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=ajinkyamorankar03)\

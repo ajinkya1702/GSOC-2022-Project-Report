@@ -12,8 +12,8 @@ This project mainly focuses on updating and improving the current search feature
 *  [Cake PHP](https://cakephp.org/)
 
 <i>Proposal</i> : [Search Enhancements](https://docs.google.com/document/d/1N5AqM5AbE7UVa9rax5_KRReH1v9c8lGzWKyVhd26xMc/edit?usp=sharing)\
-<i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=ajinkyamorankar03)\
-<i>Weekly Blogs</i> : [Blog](htt://cdli-gh.github.io/blog/gsoc22/SearchEnhancements/index)
+<i>Contributions to CDLI</i> : [Merge Requests](https://gitlab.com/cdli/framework/-/merge_requests?scope=all&state=all&author_username=ajinkyamorankar03)
+<!--- <i>Weekly Blogs</i> : [Blog](https://cdli-gh.github.io/blog/gsoc22/SearchEnhancements/index) -->
 
 ### Objectives and Deliverables
 
